@@ -1,0 +1,44 @@
+2023-08-04 19:12:28,753 INFO - Starting the scheduler
+2023-08-04 19:12:28,754 INFO - Processing each file at most -1 times
+2023-08-04 19:12:28,801 INFO - Loaded executor: SequentialExecutor
+2023-08-04 19:12:28,819 INFO - Launched DagFileProcessorManager with pid: 54903
+2023-08-04 19:12:28,824 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 19:12:28,857 INFO - Configured default timezone Timezone('UTC')
+2023-08-04 19:17:29,002 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 19:22:29,036 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 19:27:29,079 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 19:32:29,120 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 19:32:33,638 INFO - 1 tasks up for execution:
+	<TaskInstance: basic_etl_dag.extract_task manual__2023-08-04T19:32:32.958313+00:00 [scheduled]>
+2023-08-04 19:32:33,638 INFO - DAG basic_etl_dag has 0/16 running and queued tasks
+2023-08-04 19:32:33,638 INFO - Setting the following tasks to queued state:
+	<TaskInstance: basic_etl_dag.extract_task manual__2023-08-04T19:32:32.958313+00:00 [scheduled]>
+2023-08-04 19:32:33,641 INFO - Sending TaskInstanceKey(dag_id='basic_etl_dag', task_id='extract_task', run_id='manual__2023-08-04T19:32:32.958313+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2023-08-04 19:32:33,641 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'basic_etl_dag', 'extract_task', 'manual__2023-08-04T19:32:32.958313+00:00', '--local', '--subdir', 'DAGS_FOLDER/basic_etl_dag.py']
+2023-08-04 19:32:33,675 INFO - Executing command: ['airflow', 'tasks', 'run', 'basic_etl_dag', 'extract_task', 'manual__2023-08-04T19:32:32.958313+00:00', '--local', '--subdir', 'DAGS_FOLDER/basic_etl_dag.py']
+2023-08-04 19:32:40,323 INFO - Executor reports execution of basic_etl_dag.extract_task run_id=manual__2023-08-04T19:32:32.958313+00:00 exited with status success for try_number 1
+2023-08-04 19:32:40,330 INFO - TaskInstance Finished: dag_id=basic_etl_dag, task_id=extract_task, run_id=manual__2023-08-04T19:32:32.958313+00:00, map_index=-1, run_start_date=2023-08-04 19:32:36.660266+00:00, run_end_date=2023-08-04 19:32:39.221044+00:00, run_duration=2.560778, state=success, executor_state=success, try_number=1, max_tries=0, job_id=2, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2023-08-04 19:32:33.639396+00:00, queued_by_job_id=1, pid=61784
+2023-08-04 19:32:40,461 INFO - 1 tasks up for execution:
+	<TaskInstance: basic_etl_dag.transform_task manual__2023-08-04T19:32:32.958313+00:00 [scheduled]>
+2023-08-04 19:32:40,473 INFO - DAG basic_etl_dag has 0/16 running and queued tasks
+2023-08-04 19:32:40,474 INFO - Setting the following tasks to queued state:
+	<TaskInstance: basic_etl_dag.transform_task manual__2023-08-04T19:32:32.958313+00:00 [scheduled]>
+2023-08-04 19:32:40,510 INFO - Sending TaskInstanceKey(dag_id='basic_etl_dag', task_id='transform_task', run_id='manual__2023-08-04T19:32:32.958313+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2023-08-04 19:32:40,511 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'basic_etl_dag', 'transform_task', 'manual__2023-08-04T19:32:32.958313+00:00', '--local', '--subdir', 'DAGS_FOLDER/basic_etl_dag.py']
+2023-08-04 19:32:40,544 INFO - Executing command: ['airflow', 'tasks', 'run', 'basic_etl_dag', 'transform_task', 'manual__2023-08-04T19:32:32.958313+00:00', '--local', '--subdir', 'DAGS_FOLDER/basic_etl_dag.py']
+2023-08-04 19:32:43,487 INFO - Executor reports execution of basic_etl_dag.transform_task run_id=manual__2023-08-04T19:32:32.958313+00:00 exited with status success for try_number 1
+2023-08-04 19:32:43,491 INFO - TaskInstance Finished: dag_id=basic_etl_dag, task_id=transform_task, run_id=manual__2023-08-04T19:32:32.958313+00:00, map_index=-1, run_start_date=2023-08-04 19:32:42.499936+00:00, run_end_date=2023-08-04 19:32:42.938988+00:00, run_duration=0.439052, state=success, executor_state=success, try_number=1, max_tries=0, job_id=3, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2023-08-04 19:32:40.475249+00:00, queued_by_job_id=1, pid=61824
+2023-08-04 19:32:43,574 INFO - 1 tasks up for execution:
+	<TaskInstance: basic_etl_dag.load_task manual__2023-08-04T19:32:32.958313+00:00 [scheduled]>
+2023-08-04 19:32:43,574 INFO - DAG basic_etl_dag has 0/16 running and queued tasks
+2023-08-04 19:32:43,574 INFO - Setting the following tasks to queued state:
+	<TaskInstance: basic_etl_dag.load_task manual__2023-08-04T19:32:32.958313+00:00 [scheduled]>
+2023-08-04 19:32:43,577 INFO - Sending TaskInstanceKey(dag_id='basic_etl_dag', task_id='load_task', run_id='manual__2023-08-04T19:32:32.958313+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2023-08-04 19:32:43,578 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'basic_etl_dag', 'load_task', 'manual__2023-08-04T19:32:32.958313+00:00', '--local', '--subdir', 'DAGS_FOLDER/basic_etl_dag.py']
+2023-08-04 19:32:43,619 INFO - Executing command: ['airflow', 'tasks', 'run', 'basic_etl_dag', 'load_task', 'manual__2023-08-04T19:32:32.958313+00:00', '--local', '--subdir', 'DAGS_FOLDER/basic_etl_dag.py']
+2023-08-04 19:32:46,657 INFO - Executor reports execution of basic_etl_dag.load_task run_id=manual__2023-08-04T19:32:32.958313+00:00 exited with status success for try_number 1
+2023-08-04 19:32:46,661 INFO - TaskInstance Finished: dag_id=basic_etl_dag, task_id=load_task, run_id=manual__2023-08-04T19:32:32.958313+00:00, map_index=-1, run_start_date=2023-08-04 19:32:45.617368+00:00, run_end_date=2023-08-04 19:32:46.108173+00:00, run_duration=0.490805, state=success, executor_state=success, try_number=1, max_tries=0, job_id=4, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2023-08-04 19:32:43.575448+00:00, queued_by_job_id=1, pid=61839
+2023-08-04 19:32:46,742 INFO - Marking run <DagRun basic_etl_dag @ 2023-08-04 19:32:32.958313+00:00: manual__2023-08-04T19:32:32.958313+00:00, state:running, queued_at: 2023-08-04 19:32:33.009898+00:00. externally triggered: True> successful
+2023-08-04 19:32:46,743 INFO - DagRun Finished: dag_id=basic_etl_dag, execution_date=2023-08-04 19:32:32.958313+00:00, run_id=manual__2023-08-04T19:32:32.958313+00:00, run_start_date=2023-08-04 19:32:33.535501+00:00, run_end_date=2023-08-04 19:32:46.742986+00:00, run_duration=13.207485, state=success, external_trigger=True, run_type=manual, data_interval_start=2023-08-04 19:32:32.958313+00:00, data_interval_end=2023-08-04 19:32:32.958313+00:00, dag_hash=928c1a40cd8162f40a674cbb36a96ae3
+2023-08-04 19:32:46,746 INFO - Setting next_dagrun for basic_etl_dag to None, run_after=None
+2023-08-04 19:37:29,156 INFO - Resetting orphaned tasks for active dag runs
