@@ -1,0 +1,45 @@
+[[34m2023-08-04 17:48:26,599[0m] {[34mscheduler_job.py:[0m714} INFO[0m - Starting the scheduler[0m
+[[34m2023-08-04 17:48:26,600[0m] {[34mscheduler_job.py:[0m719} INFO[0m - Processing each file at most -1 times[0m
+[[34m2023-08-04 17:48:26,606[0m] {[34mexecutor_loader.py:[0m107} INFO[0m - Loaded executor: SequentialExecutor[0m
+[[34m2023-08-04 17:48:26,613[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 20563[0m
+[[34m2023-08-04 17:48:26,616[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 17:48:26,634[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2023-08-04T17:48:26.664+0000] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2023-08-04 17:53:26,715[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 17:58:26,750[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 18:01:04,321[0m] {[34mscheduler_job.py:[0m360} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: load_dag.load_task manual__2023-08-04T18:01:03.331054+00:00 [scheduled]>[0m
+[[34m2023-08-04 18:01:04,322[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG load_dag has 0/16 running and queued tasks[0m
+[[34m2023-08-04 18:01:04,323[0m] {[34mscheduler_job.py:[0m511} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: load_dag.load_task manual__2023-08-04T18:01:03.331054+00:00 [scheduled]>[0m
+[[34m2023-08-04 18:01:04,336[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='load_dag', task_id='load_task', run_id='manual__2023-08-04T18:01:03.331054+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2023-08-04 18:01:04,339[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'load_dag', 'load_task', 'manual__2023-08-04T18:01:03.331054+00:00', '--local', '--subdir', 'DAGS_FOLDER/load_dag.py'][0m
+[[34m2023-08-04 18:01:04,382[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'load_dag', 'load_task', 'manual__2023-08-04T18:01:03.331054+00:00', '--local', '--subdir', 'DAGS_FOLDER/load_dag.py'][0m
+[[34m2023-08-04 18:01:05,776[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/load_dag.py[0m
+[[34m2023-08-04 18:01:06,725[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: load_dag.load_task manual__2023-08-04T18:01:03.331054+00:00 [queued]> on host codespaces-657b09[0m
+[[34m2023-08-04 18:01:07,768[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of load_dag.load_task run_id=manual__2023-08-04T18:01:03.331054+00:00 exited with status success for try_number 1[0m
+[[34m2023-08-04 18:01:07,775[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=load_dag, task_id=load_task, run_id=manual__2023-08-04T18:01:03.331054+00:00, map_index=-1, run_start_date=2023-08-04 18:01:06.793967+00:00, run_end_date=2023-08-04 18:01:07.308915+00:00, run_duration=0.514948, state=success, executor_state=success, try_number=1, max_tries=0, job_id=2, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2023-08-04 18:01:04.324485+00:00, queued_by_job_id=1, pid=25211[0m
+[[34m2023-08-04 18:01:07,900[0m] {[34mdagrun.py:[0m607} INFO[0m - Marking run <DagRun load_dag @ 2023-08-04 18:01:03.331054+00:00: manual__2023-08-04T18:01:03.331054+00:00, state:running, queued_at: 2023-08-04 18:01:03.392166+00:00. externally triggered: True> successful[0m
+[[34m2023-08-04 18:01:07,900[0m] {[34mdagrun.py:[0m658} INFO[0m - DagRun Finished: dag_id=load_dag, execution_date=2023-08-04 18:01:03.331054+00:00, run_id=manual__2023-08-04T18:01:03.331054+00:00, run_start_date=2023-08-04 18:01:04.201021+00:00, run_end_date=2023-08-04 18:01:07.900519+00:00, run_duration=3.699498, state=success, external_trigger=True, run_type=manual, data_interval_start=2023-08-04 18:01:03.331054+00:00, data_interval_end=2023-08-04 18:01:03.331054+00:00, dag_hash=f472c8e8b5ba3947afdbd1cdcc18c97d[0m
+[[34m2023-08-04 18:01:07,903[0m] {[34mdag.py:[0m3437} INFO[0m - Setting next_dagrun for load_dag to None, run_after=None[0m
+[[34m2023-08-04 18:03:26,786[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 18:08:26,832[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 18:13:26,866[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 18:18:26,900[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 18:18:48,943[0m] {[34mscheduler_job.py:[0m360} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: load_dag.load_task manual__2023-08-04T18:18:47.955255+00:00 [scheduled]>[0m
+[[34m2023-08-04 18:18:48,943[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG load_dag has 0/16 running and queued tasks[0m
+[[34m2023-08-04 18:18:48,944[0m] {[34mscheduler_job.py:[0m511} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: load_dag.load_task manual__2023-08-04T18:18:47.955255+00:00 [scheduled]>[0m
+[[34m2023-08-04 18:18:48,945[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='load_dag', task_id='load_task', run_id='manual__2023-08-04T18:18:47.955255+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2023-08-04 18:18:48,945[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'load_dag', 'load_task', 'manual__2023-08-04T18:18:47.955255+00:00', '--local', '--subdir', 'DAGS_FOLDER/load_dag.py'][0m
+[[34m2023-08-04 18:18:48,979[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'load_dag', 'load_task', 'manual__2023-08-04T18:18:47.955255+00:00', '--local', '--subdir', 'DAGS_FOLDER/load_dag.py'][0m
+[[34m2023-08-04 18:18:50,029[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/load_dag.py[0m
+[[34m2023-08-04 18:18:50,769[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: load_dag.load_task manual__2023-08-04T18:18:47.955255+00:00 [queued]> on host codespaces-657b09[0m
+[[34m2023-08-04 18:18:51,674[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of load_dag.load_task run_id=manual__2023-08-04T18:18:47.955255+00:00 exited with status success for try_number 1[0m
+[[34m2023-08-04 18:18:51,678[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=load_dag, task_id=load_task, run_id=manual__2023-08-04T18:18:47.955255+00:00, map_index=-1, run_start_date=2023-08-04 18:18:50.855971+00:00, run_end_date=2023-08-04 18:18:51.215548+00:00, run_duration=0.359577, state=success, executor_state=success, try_number=1, max_tries=0, job_id=3, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2023-08-04 18:18:48.944648+00:00, queued_by_job_id=1, pid=32808[0m
+[[34m2023-08-04 18:18:51,768[0m] {[34mdagrun.py:[0m607} INFO[0m - Marking run <DagRun load_dag @ 2023-08-04 18:18:47.955255+00:00: manual__2023-08-04T18:18:47.955255+00:00, state:running, queued_at: 2023-08-04 18:18:47.969217+00:00. externally triggered: True> successful[0m
+[[34m2023-08-04 18:18:51,769[0m] {[34mdagrun.py:[0m658} INFO[0m - DagRun Finished: dag_id=load_dag, execution_date=2023-08-04 18:18:47.955255+00:00, run_id=manual__2023-08-04T18:18:47.955255+00:00, run_start_date=2023-08-04 18:18:48.860486+00:00, run_end_date=2023-08-04 18:18:51.768979+00:00, run_duration=2.908493, state=success, external_trigger=True, run_type=manual, data_interval_start=2023-08-04 18:18:47.955255+00:00, data_interval_end=2023-08-04 18:18:47.955255+00:00, dag_hash=f472c8e8b5ba3947afdbd1cdcc18c97d[0m
+[[34m2023-08-04 18:18:51,771[0m] {[34mdag.py:[0m3437} INFO[0m - Setting next_dagrun for load_dag to None, run_after=None[0m
+[[34m2023-08-04 18:23:26,934[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 18:28:26,969[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m

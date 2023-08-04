@@ -1,0 +1,40 @@
+2023-08-04 17:48:26,599 INFO - Starting the scheduler
+2023-08-04 17:48:26,600 INFO - Processing each file at most -1 times
+2023-08-04 17:48:26,606 INFO - Loaded executor: SequentialExecutor
+2023-08-04 17:48:26,613 INFO - Launched DagFileProcessorManager with pid: 20563
+2023-08-04 17:48:26,616 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 17:48:26,634 INFO - Configured default timezone Timezone('UTC')
+2023-08-04 17:53:26,715 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 17:58:26,750 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 18:01:04,321 INFO - 1 tasks up for execution:
+	<TaskInstance: load_dag.load_task manual__2023-08-04T18:01:03.331054+00:00 [scheduled]>
+2023-08-04 18:01:04,322 INFO - DAG load_dag has 0/16 running and queued tasks
+2023-08-04 18:01:04,323 INFO - Setting the following tasks to queued state:
+	<TaskInstance: load_dag.load_task manual__2023-08-04T18:01:03.331054+00:00 [scheduled]>
+2023-08-04 18:01:04,336 INFO - Sending TaskInstanceKey(dag_id='load_dag', task_id='load_task', run_id='manual__2023-08-04T18:01:03.331054+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2023-08-04 18:01:04,339 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'load_dag', 'load_task', 'manual__2023-08-04T18:01:03.331054+00:00', '--local', '--subdir', 'DAGS_FOLDER/load_dag.py']
+2023-08-04 18:01:04,382 INFO - Executing command: ['airflow', 'tasks', 'run', 'load_dag', 'load_task', 'manual__2023-08-04T18:01:03.331054+00:00', '--local', '--subdir', 'DAGS_FOLDER/load_dag.py']
+2023-08-04 18:01:07,768 INFO - Executor reports execution of load_dag.load_task run_id=manual__2023-08-04T18:01:03.331054+00:00 exited with status success for try_number 1
+2023-08-04 18:01:07,775 INFO - TaskInstance Finished: dag_id=load_dag, task_id=load_task, run_id=manual__2023-08-04T18:01:03.331054+00:00, map_index=-1, run_start_date=2023-08-04 18:01:06.793967+00:00, run_end_date=2023-08-04 18:01:07.308915+00:00, run_duration=0.514948, state=success, executor_state=success, try_number=1, max_tries=0, job_id=2, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2023-08-04 18:01:04.324485+00:00, queued_by_job_id=1, pid=25211
+2023-08-04 18:01:07,900 INFO - Marking run <DagRun load_dag @ 2023-08-04 18:01:03.331054+00:00: manual__2023-08-04T18:01:03.331054+00:00, state:running, queued_at: 2023-08-04 18:01:03.392166+00:00. externally triggered: True> successful
+2023-08-04 18:01:07,900 INFO - DagRun Finished: dag_id=load_dag, execution_date=2023-08-04 18:01:03.331054+00:00, run_id=manual__2023-08-04T18:01:03.331054+00:00, run_start_date=2023-08-04 18:01:04.201021+00:00, run_end_date=2023-08-04 18:01:07.900519+00:00, run_duration=3.699498, state=success, external_trigger=True, run_type=manual, data_interval_start=2023-08-04 18:01:03.331054+00:00, data_interval_end=2023-08-04 18:01:03.331054+00:00, dag_hash=f472c8e8b5ba3947afdbd1cdcc18c97d
+2023-08-04 18:01:07,903 INFO - Setting next_dagrun for load_dag to None, run_after=None
+2023-08-04 18:03:26,786 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 18:08:26,832 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 18:13:26,866 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 18:18:26,900 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 18:18:48,943 INFO - 1 tasks up for execution:
+	<TaskInstance: load_dag.load_task manual__2023-08-04T18:18:47.955255+00:00 [scheduled]>
+2023-08-04 18:18:48,943 INFO - DAG load_dag has 0/16 running and queued tasks
+2023-08-04 18:18:48,944 INFO - Setting the following tasks to queued state:
+	<TaskInstance: load_dag.load_task manual__2023-08-04T18:18:47.955255+00:00 [scheduled]>
+2023-08-04 18:18:48,945 INFO - Sending TaskInstanceKey(dag_id='load_dag', task_id='load_task', run_id='manual__2023-08-04T18:18:47.955255+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2023-08-04 18:18:48,945 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'load_dag', 'load_task', 'manual__2023-08-04T18:18:47.955255+00:00', '--local', '--subdir', 'DAGS_FOLDER/load_dag.py']
+2023-08-04 18:18:48,979 INFO - Executing command: ['airflow', 'tasks', 'run', 'load_dag', 'load_task', 'manual__2023-08-04T18:18:47.955255+00:00', '--local', '--subdir', 'DAGS_FOLDER/load_dag.py']
+2023-08-04 18:18:51,674 INFO - Executor reports execution of load_dag.load_task run_id=manual__2023-08-04T18:18:47.955255+00:00 exited with status success for try_number 1
+2023-08-04 18:18:51,678 INFO - TaskInstance Finished: dag_id=load_dag, task_id=load_task, run_id=manual__2023-08-04T18:18:47.955255+00:00, map_index=-1, run_start_date=2023-08-04 18:18:50.855971+00:00, run_end_date=2023-08-04 18:18:51.215548+00:00, run_duration=0.359577, state=success, executor_state=success, try_number=1, max_tries=0, job_id=3, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2023-08-04 18:18:48.944648+00:00, queued_by_job_id=1, pid=32808
+2023-08-04 18:18:51,768 INFO - Marking run <DagRun load_dag @ 2023-08-04 18:18:47.955255+00:00: manual__2023-08-04T18:18:47.955255+00:00, state:running, queued_at: 2023-08-04 18:18:47.969217+00:00. externally triggered: True> successful
+2023-08-04 18:18:51,769 INFO - DagRun Finished: dag_id=load_dag, execution_date=2023-08-04 18:18:47.955255+00:00, run_id=manual__2023-08-04T18:18:47.955255+00:00, run_start_date=2023-08-04 18:18:48.860486+00:00, run_end_date=2023-08-04 18:18:51.768979+00:00, run_duration=2.908493, state=success, external_trigger=True, run_type=manual, data_interval_start=2023-08-04 18:18:47.955255+00:00, data_interval_end=2023-08-04 18:18:47.955255+00:00, dag_hash=f472c8e8b5ba3947afdbd1cdcc18c97d
+2023-08-04 18:18:51,771 INFO - Setting next_dagrun for load_dag to None, run_after=None
+2023-08-04 18:23:26,934 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 18:28:26,969 INFO - Resetting orphaned tasks for active dag runs
