@@ -1,0 +1,6 @@
+[2023-08-04 15:59:28 +0000] [66316] [INFO] Starting gunicorn 20.1.0
+[2023-08-04 15:59:28 +0000] [66316] [INFO] Listening at: http://[::]:8793 (66316)
+[2023-08-04 15:59:28 +0000] [66316] [INFO] Using worker: sync
+[2023-08-04 15:59:28 +0000] [66317] [INFO] Booting worker with pid: 66317
+[2023-08-04 15:59:28 +0000] [66318] [INFO] Booting worker with pid: 66318
+/opt/python/3.10.8/lib/python3.10/site-packages/airflow/models/base.py:49 MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
