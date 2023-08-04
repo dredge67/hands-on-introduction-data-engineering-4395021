@@ -1,0 +1,24 @@
+[[34m2023-08-04 15:09:31,135[0m] {[34mscheduler_job.py:[0m714} INFO[0m - Starting the scheduler[0m
+[[34m2023-08-04 15:09:31,136[0m] {[34mscheduler_job.py:[0m719} INFO[0m - Processing each file at most -1 times[0m
+[[34m2023-08-04 15:09:31,139[0m] {[34mexecutor_loader.py:[0m107} INFO[0m - Loaded executor: SequentialExecutor[0m
+[[34m2023-08-04 15:09:31,146[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 43963[0m
+[[34m2023-08-04 15:09:31,149[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:09:31,165[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2023-08-04T15:09:31.205+0000] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2023-08-04 15:14:31,327[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:19:31,364[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:24:31,445[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:29:31,496[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:34:31,532[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:39:31,568[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:44:31,603[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:49:31,636[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:54:31,670[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2023-08-04 15:56:29,689[0m] {[34mscheduler_job.py:[0m179} INFO[0m - Exiting gracefully upon receiving signal 15[0m
+[[34m2023-08-04 15:56:30,694[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending Signals.SIGTERM to group 43963. PIDs of all processes in the group: [43963][0m
+[[34m2023-08-04 15:56:30,694[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal Signals.SIGTERM to group 43963[0m
+[[34m2023-08-04 15:56:31,113[0m] {[34mprocess_utils.py:[0m79} INFO[0m - Process psutil.Process(pid=43963, status='terminated', exitcode=0, started='15:09:31') (43963) terminated with exit code 0[0m
+[[34m2023-08-04 15:56:31,116[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending Signals.SIGTERM to group 43963. PIDs of all processes in the group: [][0m
+[[34m2023-08-04 15:56:31,116[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal Signals.SIGTERM to group 43963[0m
+[[34m2023-08-04 15:56:31,116[0m] {[34mprocess_utils.py:[0m98} INFO[0m - Sending the signal Signals.SIGTERM to process 43963 as process group is missing.[0m
+[[34m2023-08-04 15:56:31,116[0m] {[34mscheduler_job.py:[0m788} INFO[0m - Exited execute loop[0m

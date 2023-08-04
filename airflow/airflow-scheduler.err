@@ -1,0 +1,9 @@
+[2023-08-04 15:09:31 +0000] [43960] [INFO] Starting gunicorn 20.1.0
+[2023-08-04 15:09:31 +0000] [43960] [INFO] Listening at: http://[::]:8793 (43960)
+[2023-08-04 15:09:31 +0000] [43960] [INFO] Using worker: sync
+[2023-08-04 15:09:31 +0000] [43961] [INFO] Booting worker with pid: 43961
+[2023-08-04 15:09:31 +0000] [43962] [INFO] Booting worker with pid: 43962
+[2023-08-04 15:56:31 +0000] [43960] [INFO] Handling signal: term
+[2023-08-04 15:56:31 +0000] [43961] [INFO] Worker exiting (pid: 43961)
+[2023-08-04 15:56:31 +0000] [43962] [INFO] Worker exiting (pid: 43962)
+[2023-08-04 15:56:31 +0000] [43960] [INFO] Shutting down: Master

@@ -1,0 +1,23 @@
+2023-08-04 15:09:31,135 INFO - Starting the scheduler
+2023-08-04 15:09:31,136 INFO - Processing each file at most -1 times
+2023-08-04 15:09:31,139 INFO - Loaded executor: SequentialExecutor
+2023-08-04 15:09:31,146 INFO - Launched DagFileProcessorManager with pid: 43963
+2023-08-04 15:09:31,149 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:09:31,165 INFO - Configured default timezone Timezone('UTC')
+2023-08-04 15:14:31,327 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:19:31,364 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:24:31,445 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:29:31,496 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:34:31,532 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:39:31,568 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:44:31,603 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:49:31,636 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:54:31,670 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:56:29,689 INFO - Exiting gracefully upon receiving signal 15
+2023-08-04 15:56:30,694 INFO - Sending Signals.SIGTERM to group 43963. PIDs of all processes in the group: [43963]
+2023-08-04 15:56:30,694 INFO - Sending the signal Signals.SIGTERM to group 43963
+2023-08-04 15:56:31,113 INFO - Process psutil.Process(pid=43963, status='terminated', exitcode=0, started='15:09:31') (43963) terminated with exit code 0
+2023-08-04 15:56:31,116 INFO - Sending Signals.SIGTERM to group 43963. PIDs of all processes in the group: []
+2023-08-04 15:56:31,116 INFO - Sending the signal Signals.SIGTERM to group 43963
+2023-08-04 15:56:31,116 INFO - Sending the signal Signals.SIGTERM to process 43963 as process group is missing.
+2023-08-04 15:56:31,116 INFO - Exited execute loop
