@@ -1,0 +1,38 @@
+2023-08-04 01:19:00,288 INFO - Starting the scheduler
+2023-08-04 01:19:00,288 INFO - Processing each file at most -1 times
+2023-08-04 01:19:00,290 INFO - Loaded executor: SequentialExecutor
+2023-08-04 01:19:00,295 INFO - Launched DagFileProcessorManager with pid: 75308
+2023-08-04 01:19:00,297 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 01:19:00,302 INFO - Configured default timezone Timezone('UTC')
+2023-08-04 01:21:59,074 INFO - Exiting gracefully upon receiving signal 15
+2023-08-04 01:22:00,077 INFO - Sending Signals.SIGTERM to group 75308. PIDs of all processes in the group: [75308]
+2023-08-04 01:22:00,078 INFO - Sending the signal Signals.SIGTERM to group 75308
+2023-08-04 01:22:00,854 INFO - Process psutil.Process(pid=75308, status='terminated', exitcode=0, started='01:18:59') (75308) terminated with exit code 0
+2023-08-04 01:22:00,857 INFO - Sending Signals.SIGTERM to group 75308. PIDs of all processes in the group: []
+2023-08-04 01:22:00,858 INFO - Sending the signal Signals.SIGTERM to group 75308
+2023-08-04 01:22:00,858 INFO - Sending the signal Signals.SIGTERM to process 75308 as process group is missing.
+2023-08-04 01:22:00,859 INFO - Exited execute loop
+2023-08-04 01:29:13,727 INFO - Starting the scheduler
+2023-08-04 01:29:13,728 INFO - Processing each file at most -1 times
+2023-08-04 01:29:13,730 INFO - Loaded executor: SequentialExecutor
+2023-08-04 01:29:13,735 INFO - Launched DagFileProcessorManager with pid: 79633
+2023-08-04 01:29:13,738 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 01:29:13,744 INFO - Configured default timezone Timezone('UTC')
+2023-08-04 01:34:13,965 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 01:39:14,000 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 01:44:14,063 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 02:24:48,365 INFO - Starting the scheduler
+2023-08-04 02:24:48,369 INFO - Processing each file at most -1 times
+2023-08-04 02:24:48,380 INFO - Loaded executor: SequentialExecutor
+2023-08-04 02:24:48,386 INFO - Launched DagFileProcessorManager with pid: 6074
+2023-08-04 02:24:48,388 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 02:24:48,405 INFO - Configured default timezone Timezone('UTC')
+2023-08-04 02:24:48,463 INFO - Marked 1 SchedulerJob instances as failed
+2023-08-04 02:27:16,222 INFO - Exiting gracefully upon receiving signal 15
+2023-08-04 02:27:17,224 INFO - Sending Signals.SIGTERM to group 6074. PIDs of all processes in the group: [6074]
+2023-08-04 02:27:17,225 INFO - Sending the signal Signals.SIGTERM to group 6074
+2023-08-04 02:27:17,442 INFO - Process psutil.Process(pid=6074, status='terminated', exitcode=0, started='02:24:48') (6074) terminated with exit code 0
+2023-08-04 02:27:17,444 INFO - Sending Signals.SIGTERM to group 6074. PIDs of all processes in the group: []
+2023-08-04 02:27:17,444 INFO - Sending the signal Signals.SIGTERM to group 6074
+2023-08-04 02:27:17,444 INFO - Sending the signal Signals.SIGTERM to process 6074 as process group is missing.
+2023-08-04 02:27:17,445 INFO - Exited execute loop

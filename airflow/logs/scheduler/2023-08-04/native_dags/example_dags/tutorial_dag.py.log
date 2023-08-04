@@ -712,3 +712,35 @@
 [2023-08-04T01:08:55.277+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:08:55.277+0000] {dag.py:2690} INFO - Sync 1 DAGs
 [2023-08-04T01:08:55.296+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:08:55.296+0000] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
 [2023-08-04T01:08:55.338+0000] {processor.py:175} INFO - Processing /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.102 seconds
+[2023-08-04T01:19:20.540+0000] {processor.py:153} INFO - Started process (PID=75459) to work on /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:19:20.541+0000] {processor.py:743} INFO - Processing file /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-08-04T01:19:20.542+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:19:20.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:19:20.557+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:19:20.716+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:19:20.716+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2023-08-04T01:19:20.749+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:19:20.748+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2023-08-04T01:19:20.779+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:19:20.778+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2023-08-04T01:19:20.779+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:19:20.779+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-08-04T01:19:20.793+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:19:20.793+0000] {dag.py:2711} INFO - Creating ORM DAG for tutorial_dag
+[2023-08-04T01:19:20.807+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:19:20.807+0000] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-08-04T01:19:21.011+0000] {processor.py:175} INFO - Processing /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.474 seconds
+[2023-08-04T01:20:10.936+0000] {processor.py:153} INFO - Started process (PID=75778) to work on /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:20:10.937+0000] {processor.py:743} INFO - Processing file /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-08-04T01:20:10.938+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:20:10.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:20:10.955+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:20:10.974+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:20:10.974+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-08-04T01:20:10.995+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:20:10.995+0000] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-08-04T01:20:11.037+0000] {processor.py:175} INFO - Processing /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.105 seconds
+[2023-08-04T01:20:52.133+0000] {processor.py:153} INFO - Started process (PID=76080) to work on /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:20:52.134+0000] {processor.py:743} INFO - Processing file /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-08-04T01:20:52.135+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:20:52.135+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:20:52.151+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:20:52.171+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:20:52.171+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-08-04T01:20:52.191+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:20:52.191+0000] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-08-04T01:20:52.234+0000] {processor.py:175} INFO - Processing /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.105 seconds
+[2023-08-04T01:21:34.310+0000] {processor.py:153} INFO - Started process (PID=76329) to work on /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:21:34.311+0000] {processor.py:743} INFO - Processing file /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-08-04T01:21:34.311+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:21:34.311+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:21:34.327+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-08-04T01:21:34.347+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:21:34.347+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-08-04T01:21:34.366+0000] {logging_mixin.py:137} INFO - [2023-08-04T01:21:34.366+0000] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-08-04T01:21:34.405+0000] {processor.py:175} INFO - Processing /opt/python/3.10.8/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.099 seconds
