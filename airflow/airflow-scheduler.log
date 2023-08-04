@@ -1,0 +1,57 @@
+2023-08-04 13:35:02,121 INFO - Starting the scheduler
+2023-08-04 13:35:02,122 INFO - Processing each file at most -1 times
+2023-08-04 13:35:02,127 INFO - Loaded executor: SequentialExecutor
+2023-08-04 13:35:02,134 INFO - Launched DagFileProcessorManager with pid: 5390
+2023-08-04 13:35:02,136 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 13:35:02,153 INFO - Configured default timezone Timezone('UTC')
+2023-08-04 13:40:02,313 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 13:45:02,348 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 13:50:02,383 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 13:55:02,417 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:00:02,453 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:05:02,534 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:10:02,634 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:15:02,706 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:20:02,786 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:25:02,822 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:30:02,909 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:35:02,942 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:40:02,976 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:43:32,110 INFO - Exiting gracefully upon receiving signal 15
+2023-08-04 14:43:33,113 INFO - Sending Signals.SIGTERM to group 5390. PIDs of all processes in the group: [5390]
+2023-08-04 14:43:33,113 INFO - Sending the signal Signals.SIGTERM to group 5390
+2023-08-04 14:43:33,609 INFO - Process psutil.Process(pid=5390, status='terminated', exitcode=0, started='13:35:02') (5390) terminated with exit code 0
+2023-08-04 14:43:33,612 INFO - Sending Signals.SIGTERM to group 5390. PIDs of all processes in the group: []
+2023-08-04 14:43:33,612 INFO - Sending the signal Signals.SIGTERM to group 5390
+2023-08-04 14:43:33,612 INFO - Sending the signal Signals.SIGTERM to process 5390 as process group is missing.
+2023-08-04 14:43:33,613 INFO - Exited execute loop
+2023-08-04 14:47:32,651 INFO - Starting the scheduler
+2023-08-04 14:47:32,651 INFO - Processing each file at most -1 times
+2023-08-04 14:47:32,654 INFO - Loaded executor: SequentialExecutor
+2023-08-04 14:47:32,661 INFO - Launched DagFileProcessorManager with pid: 35210
+2023-08-04 14:47:32,664 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:47:32,674 INFO - Configured default timezone Timezone('UTC')
+2023-08-04 14:52:32,843 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 14:57:32,876 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:02:32,908 INFO - Resetting orphaned tasks for active dag runs
+2023-08-04 15:03:53,058 INFO - 1 tasks up for execution:
+	<TaskInstance: extract_dag.extract_task manual__2023-08-04T15:03:51.552634+00:00 [scheduled]>
+2023-08-04 15:03:53,058 INFO - DAG extract_dag has 0/16 running and queued tasks
+2023-08-04 15:03:53,058 INFO - Setting the following tasks to queued state:
+	<TaskInstance: extract_dag.extract_task manual__2023-08-04T15:03:51.552634+00:00 [scheduled]>
+2023-08-04 15:03:53,061 INFO - Sending TaskInstanceKey(dag_id='extract_dag', task_id='extract_task', run_id='manual__2023-08-04T15:03:51.552634+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2023-08-04 15:03:53,061 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'extract_dag', 'extract_task', 'manual__2023-08-04T15:03:51.552634+00:00', '--local', '--subdir', 'DAGS_FOLDER/extract_dag.py']
+2023-08-04 15:03:53,099 INFO - Executing command: ['airflow', 'tasks', 'run', 'extract_dag', 'extract_task', 'manual__2023-08-04T15:03:51.552634+00:00', '--local', '--subdir', 'DAGS_FOLDER/extract_dag.py']
+2023-08-04 15:04:00,955 INFO - Executor reports execution of extract_dag.extract_task run_id=manual__2023-08-04T15:03:51.552634+00:00 exited with status success for try_number 1
+2023-08-04 15:04:00,962 INFO - TaskInstance Finished: dag_id=extract_dag, task_id=extract_task, run_id=manual__2023-08-04T15:03:51.552634+00:00, map_index=-1, run_start_date=2023-08-04 15:03:57.901869+00:00, run_end_date=2023-08-04 15:04:00.391960+00:00, run_duration=2.490091, state=success, executor_state=success, try_number=1, max_tries=0, job_id=3, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2023-08-04 15:03:53.059434+00:00, queued_by_job_id=2, pid=41379
+2023-08-04 15:04:01,049 INFO - Marking run <DagRun extract_dag @ 2023-08-04 15:03:51.552634+00:00: manual__2023-08-04T15:03:51.552634+00:00, state:running, queued_at: 2023-08-04 15:03:51.607695+00:00. externally triggered: True> successful
+2023-08-04 15:04:01,049 INFO - DagRun Finished: dag_id=extract_dag, execution_date=2023-08-04 15:03:51.552634+00:00, run_id=manual__2023-08-04T15:03:51.552634+00:00, run_start_date=2023-08-04 15:03:52.961300+00:00, run_end_date=2023-08-04 15:04:01.049599+00:00, run_duration=8.088299, state=success, external_trigger=True, run_type=manual, data_interval_start=2023-08-04 15:03:51.552634+00:00, data_interval_end=2023-08-04 15:03:51.552634+00:00, dag_hash=2d14ab0075c7f741eafe20ee0701382d
+2023-08-04 15:04:01,052 INFO - Setting next_dagrun for extract_dag to None, run_after=None
+2023-08-04 15:06:42,636 INFO - Exiting gracefully upon receiving signal 15
+2023-08-04 15:06:43,640 INFO - Sending Signals.SIGTERM to group 35210. PIDs of all processes in the group: [35210]
+2023-08-04 15:06:43,640 INFO - Sending the signal Signals.SIGTERM to group 35210
+2023-08-04 15:06:43,900 INFO - Process psutil.Process(pid=35210, status='terminated', exitcode=0, started='14:47:32') (35210) terminated with exit code 0
+2023-08-04 15:06:43,903 INFO - Sending Signals.SIGTERM to group 35210. PIDs of all processes in the group: []
+2023-08-04 15:06:43,903 INFO - Sending the signal Signals.SIGTERM to group 35210
+2023-08-04 15:06:43,904 INFO - Sending the signal Signals.SIGTERM to process 35210 as process group is missing.
+2023-08-04 15:06:43,906 INFO - Exited execute loop

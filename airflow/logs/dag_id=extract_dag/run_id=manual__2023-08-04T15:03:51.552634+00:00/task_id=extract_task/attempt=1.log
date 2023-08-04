@@ -1,0 +1,43 @@
+[2023-08-04T15:03:57.901+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: extract_dag.extract_task manual__2023-08-04T15:03:51.552634+00:00 [queued]>
+[2023-08-04T15:03:57.908+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: extract_dag.extract_task manual__2023-08-04T15:03:51.552634+00:00 [queued]>
+[2023-08-04T15:03:57.908+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-04T15:03:57.908+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-08-04T15:03:57.908+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-04T15:03:57.950+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): extract_task> on 2023-08-04 15:03:51.552634+00:00
+[2023-08-04T15:03:57.954+0000] {standard_task_runner.py:55} INFO - Started process 41379 to run task
+[2023-08-04T15:03:57.960+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'extract_dag', 'extract_task', 'manual__2023-08-04T15:03:51.552634+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/extract_dag.py', '--cfg-path', '/tmp/tmpuheg37qb']
+[2023-08-04T15:03:57.962+0000] {standard_task_runner.py:83} INFO - Job 3: Subtask extract_task
+[2023-08-04T15:03:58.036+0000] {task_command.py:388} INFO - Running <TaskInstance: extract_dag.extract_task manual__2023-08-04T15:03:51.552634+00:00 [running]> on host codespaces-657b09
+[2023-08-04T15:03:58.150+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=extract_dag
+AIRFLOW_CTX_TASK_ID=extract_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-04T15:03:51.552634+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-04T15:03:51.552634+00:00
+[2023-08-04T15:03:58.152+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-08-04T15:03:58.152+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'wget -c https://datahub.io/core/top-level-domain-names/r/top-level-domain-names.csv.csv -O /workspaces/hands-on-introduction-data-engineering-4395021/lab/orchestrated/airflow-extract-data.csv']
+[2023-08-04T15:03:58.159+0000] {subprocess.py:86} INFO - Output:
+[2023-08-04T15:03:58.179+0000] {subprocess.py:93} INFO - --2023-08-04 15:03:58--  https://datahub.io/core/top-level-domain-names/r/top-level-domain-names.csv.csv
+[2023-08-04T15:03:58.189+0000] {subprocess.py:93} INFO - Resolving datahub.io (datahub.io)... 172.67.157.38, 104.21.40.221, 2606:4700:3030::ac43:9d26, ...
+[2023-08-04T15:03:58.190+0000] {subprocess.py:93} INFO - Connecting to datahub.io (datahub.io)|172.67.157.38|:443... connected.
+[2023-08-04T15:03:59.651+0000] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 302 Found
+[2023-08-04T15:03:59.651+0000] {subprocess.py:93} INFO - Location: https://pkgstore.datahub.io/core/top-level-domain-names/top-level-domain-names.csv_csv/data/667f4464088f3ca10522e0e2e39c8ae4/top-level-domain-names.csv_csv.csv [following]
+[2023-08-04T15:03:59.651+0000] {subprocess.py:93} INFO - --2023-08-04 15:03:59--  https://pkgstore.datahub.io/core/top-level-domain-names/top-level-domain-names.csv_csv/data/667f4464088f3ca10522e0e2e39c8ae4/top-level-domain-names.csv_csv.csv
+[2023-08-04T15:03:59.658+0000] {subprocess.py:93} INFO - Resolving pkgstore.datahub.io (pkgstore.datahub.io)... 172.67.157.38, 104.21.40.221, 2606:4700:3033::6815:28dd, ...
+[2023-08-04T15:03:59.660+0000] {subprocess.py:93} INFO - Connecting to pkgstore.datahub.io (pkgstore.datahub.io)|172.67.157.38|:443... connected.
+[2023-08-04T15:04:00.336+0000] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2023-08-04T15:04:00.337+0000] {subprocess.py:93} INFO - Length: unspecified [text/plain]
+[2023-08-04T15:04:00.337+0000] {subprocess.py:93} INFO - Saving to: ‘/workspaces/hands-on-introduction-data-engineering-4395021/lab/orchestrated/airflow-extract-data.csv’
+[2023-08-04T15:04:00.337+0000] {subprocess.py:93} INFO - 
+[2023-08-04T15:04:00.337+0000] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... ..         25.6M=0.002s
+[2023-08-04T15:04:00.337+0000] {subprocess.py:93} INFO - 
+[2023-08-04T15:04:00.337+0000] {subprocess.py:93} INFO - 2023-08-04 15:04:00 (25.6 MB/s) - ‘/workspaces/hands-on-introduction-data-engineering-4395021/lab/orchestrated/airflow-extract-data.csv’ saved [43709]
+[2023-08-04T15:04:00.338+0000] {subprocess.py:93} INFO - 
+[2023-08-04T15:04:00.338+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-04T15:04:00.392+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=extract_dag, task_id=extract_task, execution_date=20230804T150351, start_date=20230804T150357, end_date=20230804T150400
+[2023-08-04T15:04:00.469+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-08-04T15:04:00.481+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
